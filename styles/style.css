@@ -200,11 +200,11 @@ body {
     }
 
     .close-menu-btn {
-        padding: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         width: 1rem;
         aspect-ratio: 1/1;
         z-index: 1231;
-        background: url(/frontendmentor/intro-section-with-dropdown-navigation-main/images/icon-close-menu.svg) no-repeat;
     }
 
 
