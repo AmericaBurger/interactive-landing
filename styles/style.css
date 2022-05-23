@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    /* width: 375px; */
+    height: 100vh;
+    /* overflow-y: hidden; */
+}
+
+
+
+.container {
+    margin: 0;
+    padding: 0;
+    min-width: 375px;
+    /* height: 2000px;  */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 1rem 0 1rem;
+}
+/* logo image on main page */
+.image-hero-mobile {
+    margin-top: 1.15rem;
+}
+
+#hero-mobile {
+    width: 375px;
+}
+
+/* ends */
+
+.text {
+    margin-top: 2.9rem;
+}
+
+/* amke remote work part nad btn learn more */
+
+.header-text {
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+
+.paragraph-text {
+    padding: 1.1rem;
+}
+
+.paragraph-text {
+    color: var(--medium-gray);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.btn-learn-more {
+    text-align: center;
+    /* width: 10rem; */
+    background-color: var(--almost-black);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;   
+    color: var(--almost-white);
+}
+
+.btn-holder-learn-more {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img-brands {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 2rem;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+
+
+.clients-img {
+    transform: scale(0.7);
+    margin-top: 3rem;
+}
+
+/* Popup menu */
+
+.button-menu {
+    margin-top: .8rem;
+}
+
+
+.pop-up-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: var(--almost-white);
+    z-index: 10;
+    color: var(--medium-gray);
+    transition: all 250ms ease-out;
+}
+
+.wrapper {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.close-menu-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    transform: scale(0.8);
+}
+
+.features-btn,
+.company-btn,
+.login-btn,
+.register-btn {
+    padding: .6rem;
+    margin-left: .8rem;
+    /* border: 1px red solid; */
+}
+
+.arrow-up-features, .arrow-up-company {
+    margin-left: 1rem;
+}
+
+.features-images {
+    margin-right: .7rem;
+    transform: scale(1.2);
+}
+
+.features-buttons-list-div, .company-buttons-div,
+.about-btn {
+    transition: all 500ms ease;
+    margin-top: .8rem;
+}
+
+.login-reg-buttons {
+    margin-top: 2rem;
+}
+.login-btn, .register-btn {
+    margin: 0;
+    text-align: center;
+    padding: .7rem 1.5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.login-btn:hover, .register-btn:hover {
+    border: 1px var(--medium-gray) solid;
+}
+
+.careers-btn,
+.about-btn {
+    margin-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    }
+
+
+.features-list,
+.features-btn,
+.company-button,
+.careers-btn,
+.about-btn,
+.login-btn,
+.register-btn,
+.close-menu-btn   {
+    outline: none;
+    cursor: pointer;
+    transition: all 1s ease;
+    user-select:none;
+    }
+
+    .close-menu-btn {
+        padding: 1rem;
+        width: 1rem;
+        aspect-ratio: 1/1;
+        z-index: 1231;
+        background: url(/frontendmentor/intro-section-with-dropdown-navigation-main/images/icon-close-menu.svg) no-repeat;
+    }
+
+
+
+
+.company-buttons-div {
+    padding-top: rem;
+    transition: all 700ms ease;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.hide {
+    /* transform: scale(0); */
+    /* display: none; */
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    
+}
+
+.hide-display-none {
+    display: none;
+}
+
+.overlay-grey {
+    background-color: rgba(2, 18, 154, 0.644);
+    transition: .4s;
+}
+        
+.white-text {
+    color: var(--almost-white);
+}
+    
+    
+ 
