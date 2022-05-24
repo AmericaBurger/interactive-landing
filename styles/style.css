@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    height: 100vh;
+}
+
+
+
+.container {
+    margin: 0;
+    padding: 0;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 1rem 0 1rem;
+}
+/* logo image on main page */
+.image-hero-mobile {
+    margin-top: 1.15rem;
+}
+
+#hero-mobile {
+    width: 100%;
+}
+
+/* ends */
+
+.text {
+    margin-top: 2.9rem;
+}
+
+/* amke remote work part nad btn learn more */
+
+.header-text {
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+
+.paragraph-text {
+    padding: 1.1rem;
+}
+
+.paragraph-text {
+    color: var(--medium-gray);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.btn-learn-more {
+    text-align: center;
+    background-color: var(--almost-black);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;   
+    color: var(--almost-white);
+}
+
+.btn-holder-learn-more {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img-brands {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 2rem;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+
+
+.clients-img {
+    transform: scale(0.7);
+    margin-top: 3rem;
+}
+
+/* Popup menu */
+
+.button-menu {
+    margin-top: .8rem;
+}
+
+
+.pop-up-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: var(--almost-white);
+    z-index: 10;
+    color: var(--medium-gray);
+    transition: all 250ms ease-out;
+}
+
+.wrapper {
+    /* margin-top: 2rem; */
+    padding: 2rem;
+}
+
+.close-menu-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    transform: scale(0.8);
+}
+
+.features-btn,
+.company-btn,
+.login-btn,
+.register-btn {
+    padding: .6rem;
+    margin-left: .8rem;
+}
+
+.arrow-up-features, .arrow-up-company {
+    margin-left: 1rem;
+}
+
+.features-images {
+    margin-right: .7rem;
+    transform: scale(1.2);
+}
+
+.features-buttons-list-div, .company-buttons-div,
+.about-btn {
+    transition: all 500ms ease;
+    margin-top: .8rem;
+}
+
+.login-reg-buttons {
+    margin-top: 2rem;
+}
+.login-btn, .register-btn {
+    margin: 0;
+    text-align: center;
+    padding: .7rem 1.5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.login-btn:hover, .register-btn:hover {
+    border: 1px var(--medium-gray) solid;
+}
+
+.careers-btn,
+.about-btn {
+    margin-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    }
+
+
+.features-list,
+.features-btn,
+.company-button,
+.careers-btn,
+.about-btn,
+.login-btn,
+.register-btn,
+.close-menu-btn   {
+    outline: none;
+    cursor: pointer;
+    transition: all 1s ease;
+    user-select:none;
+    }
+
+    .close-menu-btn {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: 1rem;
+        aspect-ratio: 1/1;
+        z-index: 1231;
+    }
+
+
+
+
+.company-buttons-div {
+    padding-top: rem;
+    transition: all 700ms ease;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.hide {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    
+}
+
+.hide-display-none {
+    display: none;
+}
+/* overlay animation and bcg color */
+.overlay-grey {
+    background-color: rgba(2, 18, 154, 0.644);
+    transition: .4s;
+}
+        
+.white-text {
+    color: var(--almost-white);
+}
+    
+    /*  end */
+
+    @media screen and (min-width: 1320px) {
+        body {
+            overflow-y: hidden;
+        }
+        .pop-up-menu {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 5rem;
+            background-color:hsl(0, 0%, 98%, 0.00001);
+            z-index: 10;
+            color: var(--medium-gray);
+            transition: none;
+            padding-top: 1rem;
+            margin-top: 0;
+            padding-left: 10rem;
+        }
+        .login-reg-buttons {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            position: absolute;
+            right: 0;
+            padding-right: 2rem;
+        }
+        .login-btn, .register-btn {
+            padding: .8rem 3rem .8rem 3rem;
+            transition: .2s;
+            width: 10rem;
+        }
+        
+        
+        .about-btn, .careers-btn {
+            padding: 0 0rem 0 2.5rem;
+        }
+        .header {
+            padding: 1.6rem 1rem 0 2rem;
+        }
+        .features-buttons-list-div, .company-buttons-div {
+            background-color: rgb(255, 255, 255);
+            border-radius: 1rem;
+            padding: 1.5rem .5rem;
+            transition: .3s;
+            -webkit-box-shadow: 5px 5px 22px 12px rgba(0,0,0,0.2); 
+            box-shadow: 5px 5px 22px 12px rgba(0,0,0,0.2);
+           
+        }
+        .features-buttons-list-div {
+            position: absolute;
+            left: 6rem;
+        }
+        .features-list {
+            margin-right: 2rem ;
+        }
+        #hero-mobile {
+            width: 600px;
+            height: 0rem;
+        }
+        .brands-and-text {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .hero-desktop-img {
+            height: 100%;
+            position: fixed;
+            right: 5rem;
+            top: 3rem;
+
+        }
+        .main-page-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            width: 100vw;
+            padding:0rem 6rem 1rem 6rem;
+        }
+        #hero-desktop-img {
+            width: 100%;
+            height: 100%;
+            transform: scale(0.8);
+        }
+        .brands-and-text-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-text {
+            text-align: left;
+            font-size: 3.5rem;
+            padding-top: 5rem;
+        }
+        .paragraph-text {
+            text-align: left;
+            padding: 0;
+            padding-top: 3rem;
+            padding-right: 12rem ;
+        }
+        .btn-holder-learn-more {
+            justify-content: start;
+            padding-top: 2rem;
+        }
+        .btn-learn-more {
+            cursor: pointer;
+        }
+        .div-img-brands {
+            padding-top: 2.5rem;
+        }
+}      
+ 
